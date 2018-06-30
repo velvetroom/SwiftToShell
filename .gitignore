@@ -16,6 +16,7 @@
 .dSYM.zip
 .dSYM
 .swp
+.build
 *.xcuserstate
 xcdebugger
 ~.nib/
