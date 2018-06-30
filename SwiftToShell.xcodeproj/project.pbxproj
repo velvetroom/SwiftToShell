@@ -7,13 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DAFD568920E6FE5300F721AF /* SwiftToShell.h in Headers */ = {isa = PBXBuildFile; fileRef = DAFD568720E6FE5300F721AF /* SwiftToShell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DAE1EC9520E70187000C0FFE /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE1EC9420E70187000C0FFE /* Tests.swift */; };
+		DAE1EC9920E70192000C0FFE /* SwiftToShell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE1EC9820E70192000C0FFE /* SwiftToShell.swift */; };
+		DAE1EC9B20E701B0000C0FFE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE1EC9A20E701B0000C0FFE /* Constants.swift */; };
+		DAFD569820E6FEDD00F721AF /* SwiftToShell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFD568420E6FE5300F721AF /* SwiftToShell.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		DAFD569920E6FEDD00F721AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAFD567B20E6FE5300F721AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAFD568320E6FE5300F721AF;
+			remoteInfo = SwiftToShell;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		DAE1EC9420E70187000C0FFE /* Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		DAE1EC9820E70192000C0FFE /* SwiftToShell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftToShell.swift; sourceTree = "<group>"; };
+		DAE1EC9A20E701B0000C0FFE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DAFD568420E6FE5300F721AF /* SwiftToShell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftToShell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DAFD568720E6FE5300F721AF /* SwiftToShell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftToShell.h; sourceTree = "<group>"; };
-		DAFD568820E6FE5300F721AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAFD569320E6FEDC00F721AF /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAFD569E20E7011300F721AF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DAFD569F20E7011300F721AF /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		DAFD56A020E7011300F721AF /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		DAFD56A520E7017100F721AF /* Configuration */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Configuration; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,14 +43,52 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DAFD569020E6FEDC00F721AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAFD569820E6FEDD00F721AF /* SwiftToShell.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DAE1EC9320E70187000C0FFE /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DAE1EC9420E70187000C0FFE /* Tests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		DAE1EC9620E70192000C0FFE /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				DAE1EC9720E70192000C0FFE /* SwiftToShell */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		DAE1EC9720E70192000C0FFE /* SwiftToShell */ = {
+			isa = PBXGroup;
+			children = (
+				DAE1EC9820E70192000C0FFE /* SwiftToShell.swift */,
+				DAE1EC9A20E701B0000C0FFE /* Constants.swift */,
+			);
+			path = SwiftToShell;
+			sourceTree = "<group>";
+		};
 		DAFD567A20E6FE5300F721AF = {
 			isa = PBXGroup;
 			children = (
-				DAFD568620E6FE5300F721AF /* SwiftToShell */,
+				DAE1EC9620E70192000C0FFE /* Sources */,
+				DAE1EC9320E70187000C0FFE /* Tests */,
 				DAFD568520E6FE5300F721AF /* Products */,
+				DAFD56A520E7017100F721AF /* Configuration */,
+				DAFD569E20E7011300F721AF /* README.md */,
+				DAFD56A020E7011300F721AF /* LICENSE */,
+				DAFD569F20E7011300F721AF /* .gitignore */,
 			);
 			sourceTree = "<group>";
 		};
@@ -39,17 +96,9 @@
 			isa = PBXGroup;
 			children = (
 				DAFD568420E6FE5300F721AF /* SwiftToShell.framework */,
+				DAFD569320E6FEDC00F721AF /* Tests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		DAFD568620E6FE5300F721AF /* SwiftToShell */ = {
-			isa = PBXGroup;
-			children = (
-				DAFD568720E6FE5300F721AF /* SwiftToShell.h */,
-				DAFD568820E6FE5300F721AF /* Info.plist */,
-			);
-			path = SwiftToShell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,7 +108,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAFD568920E6FE5300F721AF /* SwiftToShell.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,16 +132,38 @@
 			productReference = DAFD568420E6FE5300F721AF /* SwiftToShell.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		DAFD569220E6FEDC00F721AF /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAFD569B20E6FEDD00F721AF /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				DAFD568F20E6FEDC00F721AF /* Sources */,
+				DAFD569020E6FEDC00F721AF /* Frameworks */,
+				DAFD569120E6FEDC00F721AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAFD569A20E6FEDD00F721AF /* PBXTargetDependency */,
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = DAFD569320E6FEDC00F721AF /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		DAFD567B20E6FE5300F721AF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = iturbide;
 				TargetAttributes = {
 					DAFD568320E6FE5300F721AF = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					DAFD569220E6FEDC00F721AF = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
 				};
@@ -111,12 +181,20 @@
 			projectRoot = "";
 			targets = (
 				DAFD568320E6FE5300F721AF /* SwiftToShell */,
+				DAFD569220E6FEDC00F721AF /* Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		DAFD568220E6FE5300F721AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAFD569120E6FEDC00F721AF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -130,10 +208,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAE1EC9920E70192000C0FFE /* SwiftToShell.swift in Sources */,
+				DAE1EC9B20E701B0000C0FFE /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAFD568F20E6FEDC00F721AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAE1EC9520E70187000C0FFE /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DAFD569A20E6FEDD00F721AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAFD568320E6FE5300F721AF /* SwiftToShell */;
+			targetProxy = DAFD569920E6FEDD00F721AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		DAFD568A20E6FE5300F721AF /* Debug */ = {
@@ -144,7 +240,6 @@
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
@@ -193,8 +288,10 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				VERSIONING_SYSTEM = "apple-generic";
+				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
@@ -207,7 +304,6 @@
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
@@ -234,7 +330,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -249,8 +345,10 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				VERSIONING_SYSTEM = "apple-generic";
+				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
@@ -267,7 +365,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = SwiftToShell/Info.plist;
+				INFOPLIST_FILE = Configuration/source.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -277,7 +375,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = iturbide.SwiftToShell;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -293,7 +390,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = SwiftToShell/Info.plist;
+				INFOPLIST_FILE = Configuration/source.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -303,7 +400,42 @@
 				PRODUCT_BUNDLE_IDENTIFIER = iturbide.SwiftToShell;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		DAFD569C20E6FEDD00F721AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7AMWG3RLHN;
+				INFOPLIST_FILE = Configuration/tests.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = iturbide.SwiftToShell.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DAFD569D20E6FEDD00F721AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7AMWG3RLHN;
+				INFOPLIST_FILE = Configuration/tests.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = iturbide.SwiftToShell.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -324,6 +456,15 @@
 			buildConfigurations = (
 				DAFD568D20E6FE5300F721AF /* Debug */,
 				DAFD568E20E6FE5300F721AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAFD569B20E6FEDD00F721AF /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAFD569C20E6FEDD00F721AF /* Debug */,
+				DAFD569D20E6FEDD00F721AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
