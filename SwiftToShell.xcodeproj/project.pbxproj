@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		DA3B9BA920E78C4F00596635 /* ShellProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B9BA820E78C4F00596635 /* ShellProviderProtocol.swift */; };
 		DA3B9BAB20E78C6E00596635 /* StandardShell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B9BAA20E78C6E00596635 /* StandardShell.swift */; };
-		DAE1EC9520E70187000C0FFE /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE1EC9420E70187000C0FFE /* Tests.swift */; };
+		DA3B9BAD20E78D4B00596635 /* TestStandardShell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B9BAC20E78D4B00596635 /* TestStandardShell.swift */; };
+		DA3B9BAF20E78ECA00596635 /* ShellProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B9BAE20E78ECA00596635 /* ShellProcess.swift */; };
+		DA3B9BB120E791D400596635 /* ShellPipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B9BB020E791D400596635 /* ShellPipe.swift */; };
 		DAE1EC9920E70192000C0FFE /* Shell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE1EC9820E70192000C0FFE /* Shell.swift */; };
 		DAE1EC9B20E701B0000C0FFE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE1EC9A20E701B0000C0FFE /* Constants.swift */; };
 		DAFD569820E6FEDD00F721AF /* SwiftToShell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFD568420E6FE5300F721AF /* SwiftToShell.framework */; };
@@ -28,7 +30,9 @@
 /* Begin PBXFileReference section */
 		DA3B9BA820E78C4F00596635 /* ShellProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellProviderProtocol.swift; sourceTree = "<group>"; };
 		DA3B9BAA20E78C6E00596635 /* StandardShell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardShell.swift; sourceTree = "<group>"; };
-		DAE1EC9420E70187000C0FFE /* Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		DA3B9BAC20E78D4B00596635 /* TestStandardShell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestStandardShell.swift; sourceTree = "<group>"; };
+		DA3B9BAE20E78ECA00596635 /* ShellProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellProcess.swift; sourceTree = "<group>"; };
+		DA3B9BB020E791D400596635 /* ShellPipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellPipe.swift; sourceTree = "<group>"; };
 		DAE1EC9820E70192000C0FFE /* Shell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shell.swift; sourceTree = "<group>"; };
 		DAE1EC9A20E701B0000C0FFE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DAFD568420E6FE5300F721AF /* SwiftToShell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftToShell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,7 +65,7 @@
 		DAE1EC9320E70187000C0FFE /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				DAE1EC9420E70187000C0FFE /* Tests.swift */,
+				DA3B9BAC20E78D4B00596635 /* TestStandardShell.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -72,6 +76,8 @@
 				DAE1EC9820E70192000C0FFE /* Shell.swift */,
 				DA3B9BA820E78C4F00596635 /* ShellProviderProtocol.swift */,
 				DA3B9BAA20E78C6E00596635 /* StandardShell.swift */,
+				DA3B9BAE20E78ECA00596635 /* ShellProcess.swift */,
+				DA3B9BB020E791D400596635 /* ShellPipe.swift */,
 				DAE1EC9A20E701B0000C0FFE /* Constants.swift */,
 			);
 			path = Source;
@@ -207,8 +213,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAE1EC9920E70192000C0FFE /* Shell.swift in Sources */,
+				DA3B9BAF20E78ECA00596635 /* ShellProcess.swift in Sources */,
 				DAE1EC9B20E701B0000C0FFE /* Constants.swift in Sources */,
 				DA3B9BA920E78C4F00596635 /* ShellProviderProtocol.swift in Sources */,
+				DA3B9BB120E791D400596635 /* ShellPipe.swift in Sources */,
 				DA3B9BAB20E78C6E00596635 /* StandardShell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,7 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAE1EC9520E70187000C0FFE /* Tests.swift in Sources */,
+				DA3B9BAD20E78D4B00596635 /* TestStandardShell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

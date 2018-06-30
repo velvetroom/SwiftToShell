@@ -6,5 +6,5 @@ struct Constants {
     static let encodingValue:String = "en_US.UTF-8"
     static let homeKey:String = "HOME"
     static let newLine:String = "\n"
-    static let separator:Character = " "
+    static let separator:String = " "
 }
