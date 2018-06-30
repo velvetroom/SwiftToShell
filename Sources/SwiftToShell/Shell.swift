@@ -1,13 +1,13 @@
 import Foundation
 
-class Shell {
+public class Shell {
     private let pipe:Pipe
     
-    init() {
+    public init() {
         self.pipe = Pipe()
     }
     
-    func execute(input:String) -> String {
+    public func execute(input:String) -> String {
         let process:Process = self.makeProcessWith(input:input)
         process.launch()
         process.waitUntilExit()

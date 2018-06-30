@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DAE1EC9520E70187000C0FFE /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE1EC9420E70187000C0FFE /* Tests.swift */; };
-		DAE1EC9920E70192000C0FFE /* SwiftToShell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE1EC9820E70192000C0FFE /* SwiftToShell.swift */; };
+		DAE1EC9920E70192000C0FFE /* Shell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE1EC9820E70192000C0FFE /* Shell.swift */; };
 		DAE1EC9B20E701B0000C0FFE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE1EC9A20E701B0000C0FFE /* Constants.swift */; };
 		DAFD569820E6FEDD00F721AF /* SwiftToShell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFD568420E6FE5300F721AF /* SwiftToShell.framework */; };
 /* End PBXBuildFile section */
@@ -25,8 +25,9 @@
 
 /* Begin PBXFileReference section */
 		DAE1EC9420E70187000C0FFE /* Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		DAE1EC9820E70192000C0FFE /* SwiftToShell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftToShell.swift; sourceTree = "<group>"; };
+		DAE1EC9820E70192000C0FFE /* Shell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shell.swift; sourceTree = "<group>"; };
 		DAE1EC9A20E701B0000C0FFE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DAE1EC9C20E705E3000C0FFE /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		DAFD568420E6FE5300F721AF /* SwiftToShell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftToShell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAFD569320E6FEDC00F721AF /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAFD569E20E7011300F721AF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -65,15 +66,15 @@
 		DAE1EC9620E70192000C0FFE /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				DAE1EC9720E70192000C0FFE /* SwiftToShell */,
+				DAE1ECA020E70C14000C0FFE /* SwiftToShell */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
 		};
-		DAE1EC9720E70192000C0FFE /* SwiftToShell */ = {
+		DAE1ECA020E70C14000C0FFE /* SwiftToShell */ = {
 			isa = PBXGroup;
 			children = (
-				DAE1EC9820E70192000C0FFE /* SwiftToShell.swift */,
+				DAE1EC9820E70192000C0FFE /* Shell.swift */,
 				DAE1EC9A20E701B0000C0FFE /* Constants.swift */,
 			);
 			path = SwiftToShell;
@@ -86,6 +87,7 @@
 				DAE1EC9320E70187000C0FFE /* Tests */,
 				DAFD568520E6FE5300F721AF /* Products */,
 				DAFD56A520E7017100F721AF /* Configuration */,
+				DAE1EC9C20E705E3000C0FFE /* Package.swift */,
 				DAFD569E20E7011300F721AF /* README.md */,
 				DAFD56A020E7011300F721AF /* LICENSE */,
 				DAFD569F20E7011300F721AF /* .gitignore */,
@@ -208,7 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAE1EC9920E70192000C0FFE /* SwiftToShell.swift in Sources */,
+				DAE1EC9920E70192000C0FFE /* Shell.swift in Sources */,
 				DAE1EC9B20E701B0000C0FFE /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
