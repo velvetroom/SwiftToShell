@@ -7,7 +7,6 @@ class ShellProcess {
         }
         set(newValue) {
             self.process.arguments = newValue.components(separatedBy:Constants.separator)
-            print(self.process.arguments)
         }
     }
     
@@ -28,7 +27,9 @@ class ShellProcess {
     }
     
     func run() {
-        self.process.launch()
+        do {
+            try self.process.run()
+        } catch { return }
         self.process.waitUntilExit()
     }
     

@@ -17,5 +17,9 @@ class TestStandardShell:XCTestCase {
         XCTAssertEqual(expectedResponse, response, "Failed to return message")
     }
     
-    
+    func testSendMessageEmpty() {
+        let message:String = " "
+        let response:String = self.model.send(message:message)
+        XCTAssertEqual(String(), response, "Failed to return message")
+    }
 }
