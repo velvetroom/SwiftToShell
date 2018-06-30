@@ -1,10 +1,16 @@
 import Foundation
 
 public class Shell {
-    private let pipe:Pipe
+    var provider:ShellProviderProtocol
     
     public init() {
-        self.pipe = Pipe()
+        self.provider = StandardShell()
+    }
+    
+    public func send(message:String) -> String {
+        var response:String = self.provider.send(message:message)
+        response = self.clean(string:response)
+        return response
     }
     
     private func clean(string:String) -> String {
