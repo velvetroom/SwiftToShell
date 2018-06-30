@@ -1,7 +1,7 @@
 import Foundation
 
 public class Shell {
-    private let pipe:PipeA
+    private let pipe:Pipe
     
     public init() {
         self.pipe = Pipe()

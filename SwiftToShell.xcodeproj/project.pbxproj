@@ -62,19 +62,19 @@
 			path = Tests;
 			sourceTree = "<group>";
 		};
-		DAE1EC9620E70192000C0FFE /* Sources */ = {
+		DAE1EC9620E70192000C0FFE /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				DAE1EC9820E70192000C0FFE /* Shell.swift */,
 				DAE1EC9A20E701B0000C0FFE /* Constants.swift */,
 			);
-			path = Sources;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		DAFD567A20E6FE5300F721AF = {
 			isa = PBXGroup;
 			children = (
-				DAE1EC9620E70192000C0FFE /* Sources */,
+				DAE1EC9620E70192000C0FFE /* Source */,
 				DAE1EC9320E70187000C0FFE /* Tests */,
 				DAFD568520E6FE5300F721AF /* Products */,
 				DAFD56A520E7017100F721AF /* Configuration */,
