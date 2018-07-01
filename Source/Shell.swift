@@ -1,13 +1,13 @@
 import Foundation
 
-public class Shell {
+class Shell:ShellProtocol {
     var provider:ShellProviderProtocol
     
-    public init() {
+    init() {
         self.provider = StandardShell()
     }
     
-    public func send(message:String) -> String {
+    func send(message:String) -> String {
         var response:String = self.provider.send(message:message)
         response = self.clean(string:response)
         return response
