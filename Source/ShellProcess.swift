@@ -6,7 +6,7 @@ class ShellProcess {
             return String()
         }
         set(newValue) {
-            self.process.arguments = newValue.components(separatedBy:Constants.separator)
+            self.process.arguments = newValue.components(separatedBy:SwiftToShellConstants.separator)
         }
     }
     
@@ -34,8 +34,8 @@ class ShellProcess {
     }
     
     private func configureProcess() {
-        self.process.executableURL = URL(fileURLWithPath:Constants.environment)
-        self.process.environment = [Constants.encodingKey : Constants.encodingValue,
-                                    Constants.homeKey : NSHomeDirectory()]
+        self.process.executableURL = URL(fileURLWithPath:SwiftToShellConstants.environment)
+        self.process.environment = [SwiftToShellConstants.encodingKey : SwiftToShellConstants.encodingValue,
+                                    SwiftToShellConstants.homeKey : NSHomeDirectory()]
     }
 }

@@ -17,7 +17,7 @@
 		DA69AFD320E8E57F006F0F91 /* ShellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA69AFD220E8E57F006F0F91 /* ShellProtocol.swift */; };
 		DA69AFD520E8E5C2006F0F91 /* ShellFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA69AFD420E8E5C2006F0F91 /* ShellFactory.swift */; };
 		DAE1EC9920E70192000C0FFE /* Shell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE1EC9820E70192000C0FFE /* Shell.swift */; };
-		DAE1EC9B20E701B0000C0FFE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE1EC9A20E701B0000C0FFE /* Constants.swift */; };
+		DAE1EC9B20E701B0000C0FFE /* SwiftToShellConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE1EC9A20E701B0000C0FFE /* SwiftToShellConstants.swift */; };
 		DAFD569820E6FEDD00F721AF /* SwiftToShell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFD568420E6FE5300F721AF /* SwiftToShell.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,7 +42,7 @@
 		DA69AFD220E8E57F006F0F91 /* ShellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellProtocol.swift; sourceTree = "<group>"; };
 		DA69AFD420E8E5C2006F0F91 /* ShellFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellFactory.swift; sourceTree = "<group>"; };
 		DAE1EC9820E70192000C0FFE /* Shell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shell.swift; sourceTree = "<group>"; };
-		DAE1EC9A20E701B0000C0FFE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DAE1EC9A20E701B0000C0FFE /* SwiftToShellConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftToShellConstants.swift; sourceTree = "<group>"; };
 		DAFD568420E6FE5300F721AF /* SwiftToShell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftToShell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAFD569320E6FEDC00F721AF /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAFD569E20E7011300F721AF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -90,7 +90,7 @@
 				DA3B9BAA20E78C6E00596635 /* StandardShell.swift */,
 				DA3B9BAE20E78ECA00596635 /* ShellProcess.swift */,
 				DA3B9BB020E791D400596635 /* ShellPipe.swift */,
-				DAE1EC9A20E701B0000C0FFE /* Constants.swift */,
+				DAE1EC9A20E701B0000C0FFE /* SwiftToShellConstants.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -226,7 +226,7 @@
 			files = (
 				DAE1EC9920E70192000C0FFE /* Shell.swift in Sources */,
 				DA3B9BAF20E78ECA00596635 /* ShellProcess.swift in Sources */,
-				DAE1EC9B20E701B0000C0FFE /* Constants.swift in Sources */,
+				DAE1EC9B20E701B0000C0FFE /* SwiftToShellConstants.swift in Sources */,
 				DA3B9BA920E78C4F00596635 /* ShellProviderProtocol.swift in Sources */,
 				DA3B9BB120E791D400596635 /* ShellPipe.swift in Sources */,
 				DA69AFD520E8E5C2006F0F91 /* ShellFactory.swift in Sources */,

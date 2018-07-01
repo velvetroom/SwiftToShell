@@ -1,6 +1,6 @@
 import Foundation
 
-struct Constants {
+struct SwiftToShellConstants {
     static let environment:String = "/usr/bin/env"
     static let encodingKey:String = "LC_ALL"
     static let encodingValue:String = "en_US.UTF-8"

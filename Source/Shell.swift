@@ -16,7 +16,7 @@ class Shell:ShellProtocol {
     private func clean(string:String) -> String {
         var string:String = string
         if let last:Character = string.last {
-            if String(last) == Constants.newLine {
+            if String(last) == SwiftToShellConstants.newLine {
                 string = String(string.dropLast())
             }
         }
