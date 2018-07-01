@@ -7,7 +7,7 @@ class Shell:ShellProtocol {
         self.provider = StandardShell()
     }
     
-    func send(message:String) -> String {
+    @discardableResult func send(message:String) -> String {
         var response:String = self.provider.send(message:message)
         response = self.clean(string:response)
         return response
